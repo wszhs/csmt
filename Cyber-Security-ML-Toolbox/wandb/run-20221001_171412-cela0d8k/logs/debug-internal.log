@@ -1,0 +1,78 @@
+2022-10-01 17:14:12,881 INFO    StreamThr :40425 [internal.py:wandb_internal():91] W&B internal server running at pid: 40425, started at: 2022-10-01 17:14:12.880673
+2022-10-01 17:14:12,882 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: status
+2022-10-01 17:14:12,884 DEBUG   SenderThread:40425 [sender.py:send_request():315] send_request: status
+2022-10-01 17:14:12,886 INFO    WriterThread:40425 [datastore.py:open_for_write():75] open: /Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/wandb/run-20221001_171412-cela0d8k/run-cela0d8k.wandb
+2022-10-01 17:14:12,887 DEBUG   SenderThread:40425 [sender.py:send():301] send: header
+2022-10-01 17:14:12,887 DEBUG   SenderThread:40425 [sender.py:send():301] send: run
+2022-10-01 17:14:12,890 DEBUG   SenderThread:40425 [git.py:repo():40] git repository is invalid
+2022-10-01 17:14:31,064 ERROR   SenderThread:40425 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 667, in urlopen
+    self._prepare_proxy(conn)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
+    conn.connect()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connection.py", line 371, in connect
+    ssl_context=context,
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 386, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/internal/internal_api.py", line 199, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/adapters.py", line 510, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2022-10-01 17:14:42,965 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:14:48,074 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:14:53,179 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:14:58,282 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:03,384 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:08,489 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:13,596 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:18,704 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:23,809 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:28,911 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:34,017 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:39,119 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:44,226 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:49,328 DEBUG   HandlerThread:40425 [handler.py:handle_request():138] handle_request: poll_exit
+2022-10-01 17:15:55,214 INFO    MainThread:40425 [internal.py:handle_exit():78] Internal process exited
+2022-10-01 17:15:55,215 WARNING MsgRouterThr:40425 [router.py:message_loop():74] EOFError seen in message_loop

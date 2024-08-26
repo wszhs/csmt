@@ -1,0 +1,38 @@
+{
+ //  "python.pythonPath": "/opt/anaconda3/envs/py36/bin/python",
+    "jupyter.jupyterServerType": "local",
+    "restructuredtext.syntaxHighlighting.disabled": true,
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/.vscode": true,
+        ".vscode": true,
+        "**/adversarial-robustness-toolbox": true,
+        "adversarial-robustness-toolbox": true,
+        "**/art": true,
+        "art":true
+    },
+    "explorerExclude.backup": null,
+    "files.autoSave": "afterDelay",
+    "favorites.sortDirection": "ASC",
+    "favorites.resources": [
+        {
+            "filePath": "tests/test_Interpretability",
+            "group": "Default"
+        },
+        {
+            "filePath": "tests/test_Interpretability",
+            "group": "interpret"
+        }
+    ],
+    "favorites.groups": [
+        "Default",
+        "interpret"
+    ],
+    "favorites.currentGroup": "interpret",
+    "favorites.sortOrder": "DESC"
+}

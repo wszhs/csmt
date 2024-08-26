@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+iris_zhs,mlp_torch,0.55,0.18181818181818182,1.0,0.1,0.55

@@ -1,0 +1,4 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+contagiopdf,lr,1.0,1.0,1.0,1.0,1.0
+contagiopdf,svm,1.0,1.0,1.0,1.0,1.0
+contagiopdf,mlp_torch,1.0,1.0,1.0,1.0,1.0

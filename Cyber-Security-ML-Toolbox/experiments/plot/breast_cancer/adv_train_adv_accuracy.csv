@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,detection_rate
+breast_cancer,svm,0.956140350877193,0.965034965034965,0.965034965034965,0.965034965034965,0.965034965034965

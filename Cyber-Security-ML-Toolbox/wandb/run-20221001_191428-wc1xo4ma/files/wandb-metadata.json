@@ -1,0 +1,16 @@
+{
+    "os": "Darwin-19.6.0-x86_64-i386-64bit",
+    "python": "3.6.12",
+    "heartbeatAt": "2022-10-01T11:14:30.118782",
+    "startedAt": "2022-10-01T11:14:28.885225",
+    "docker": null,
+    "cpu_count": 8,
+    "cuda": null,
+    "args": [],
+    "state": "running",
+    "program": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/tests/test_classifer.py",
+    "codePath": "tests/test_classifer.py",
+    "host": "zhanghangshengdeMacBook-Pro.local",
+    "username": "zhanghangsheng",
+    "executable": "/opt/anaconda3/envs/py36/bin/python"
+}

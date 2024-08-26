@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+breast_cancer_zhs,rf,0.9736842105263158,0.9795918367346939,0.96,1.0,0.9642857142857143

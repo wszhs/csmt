@@ -1,0 +1,20 @@
+/opt/anaconda3/envs/py36/lib/python3.6/site-packages/sklearn/utils/validation.py:63: DataConversionWarning: A column-vector y was passed when a 1d array was expected. Please change the shape of y to (n_samples, ), for example using ravel().
+  return f(*args, **kwargs)
+[34m[1mwandb[39m[22m:
+[34m[1mwandb[39m[22m: Plotting Classifier.
+datasets    algorithm      accuracy        f1    precision    recall    roc_auc    ASR
+----------  -----------  ----------  --------  -----------  --------  ---------  -----
+blob        lr             0.993333  0.993243     0.986577         1   0.993464      0
+[34m[1mwandb[39m[22m: Logged feature importances.
+Traceback (most recent call last):
+  File "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/tests/test_classifer.py", line 71, in <module>
+    wandb.sklearn.plot_classifier(trained_models[0].classifier.model, X_train, X_test, y_train, y_test, y_pred, y_probas, True)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sklearn/plot/classifier.py", line 79, in classifier
+    confusion_matrix(y_test, y_pred, labels)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sklearn/plot/classifier.py", line 174, in confusion_matrix
+    normalize,
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sklearn/calculate/confusion_matrix.py", line 64, in confusion_matrix
+    table = make_table(cm, pred_classes, true_classes, labels)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sklearn/calculate/confusion_matrix.py", line 74, in make_table
+    isinstance(pred_classes[i], int) or isinstance(pred_classes[0], np.integer)
+IndexError: too many indices for array: array is 0-dimensional, but 1 were indexed

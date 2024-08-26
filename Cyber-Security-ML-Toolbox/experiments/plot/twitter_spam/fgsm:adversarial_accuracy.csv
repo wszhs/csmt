@@ -1,0 +1,3 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+twitter_spam,lr,0.43747253861493224,0.0,0.0,0.0,0.39111319272375655
+twitter_spam,svm,0.4337715888734917,0.0,0.0,0.0,0.38780443584939867

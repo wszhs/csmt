@@ -1,0 +1,12 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+satflow,lr,1.0,1.0,1.0,1.0,1.0
+satflow,svm,1.0,1.0,1.0,1.0,1.0
+satflow,dt,1.0,1.0,1.0,1.0,1.0
+satflow,rf,0.499,0.0,0.0,0.0,0.5
+satflow,xgboost,1.0,1.0,1.0,1.0,1.0
+satflow,lightgbm,0.998,0.9980000000000001,1.0,0.9960079840319361,0.998003992015968
+satflow,catboost,0.499,0.0,0.0,0.0,0.5
+satflow,deepforest,0.499,0.0,0.0,0.0,0.5
+satflow,knn,1.0,1.0,1.0,1.0,1.0
+satflow,mlp_torch,0.612,0.36807817589576547,1.0,0.22554890219560877,0.6127744510978044
+satflow,soft_ensemble,1.0,1.0,1.0,1.0,1.0

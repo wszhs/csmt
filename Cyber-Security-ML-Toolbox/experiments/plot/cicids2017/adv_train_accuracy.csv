@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc,ASR
+cicids2017,mlp_torch,0.9146341463414634,0.888888888888889,0.8,1.0,0.9351851851851851,0.0

@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc,ASR
+flow_fsnet,dt,0.7,0.7,0.7,0.7,0,30.000000000000004

@@ -1,0 +1,42 @@
+[
+    {
+        "type": "Group",
+        "name": "classifier",
+        "parent_id": null,
+        "workspaceRoot": null,
+        "workspacePath": null,
+        "id": "fj2xvQrD0AesqSNw"
+    },
+    {
+        "type": "File",
+        "name": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/tests/test_classifer.py",
+        "parent_id": "fj2xvQrD0AesqSNw",
+        "workspaceRoot": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox",
+        "workspacePath": "tests/test_classifer.py",
+        "id": "V1Lt8QOzemIv0bEw"
+    },
+    {
+        "type": "File",
+        "name": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/csmt/get_model_data.py",
+        "parent_id": "fj2xvQrD0AesqSNw",
+        "workspaceRoot": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox",
+        "workspacePath": "csmt/get_model_data.py",
+        "id": "pVdA3ZN7cRWbe08o"
+    },
+    {
+        "type": "File",
+        "name": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/tests/test_evasion_binary.py",
+        "parent_id": "fj2xvQrD0AesqSNw",
+        "workspaceRoot": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox",
+        "workspacePath": "tests/test_evasion_binary.py",
+        "id": "jtWq5YfEJVnZuaXc"
+    },
+    {
+        "type": "Directory",
+        "name": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/data_analysis",
+        "parent_id": null,
+        "workspaceRoot": "/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox",
+        "workspacePath": "data_analysis",
+        "id": "eC5suwj9BoqROd2H"
+    }
+]

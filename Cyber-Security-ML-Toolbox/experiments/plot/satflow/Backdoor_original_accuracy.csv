@@ -1,0 +1,12 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+satflow,lr,1.0,1.0,1.0,1.0,1.0
+satflow,svm,1.0,1.0,1.0,1.0,1.0
+satflow,dt,1.0,1.0,1.0,1.0,1.0
+satflow,rf,1.0,1.0,1.0,1.0,1.0
+satflow,xgboost,1.0,1.0,1.0,1.0,1.0
+satflow,lightgbm,1.0,1.0,1.0,1.0,1.0
+satflow,catboost,1.0,1.0,1.0,1.0,1.0
+satflow,deepforest,1.0,1.0,1.0,1.0,1.0
+satflow,knn,1.0,1.0,1.0,1.0,1.0
+satflow,mlp_torch,1.0,1.0,1.0,1.0,1.0
+satflow,soft_ensemble,1.0,1.0,1.0,1.0,1.0

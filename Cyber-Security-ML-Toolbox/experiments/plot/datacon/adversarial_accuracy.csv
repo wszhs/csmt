@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc,ASR
+datacon,omni,0.6144578313253012,0.07514450867052024,0.04391891891891892,0.26,0.44859,74.0

@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc,ASR
+mnist,cnn_mnist_torch,0.945,0.945,0.945,0.945,0,5.500000000000005

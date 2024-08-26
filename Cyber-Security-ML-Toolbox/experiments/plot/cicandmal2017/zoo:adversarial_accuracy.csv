@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+cicandmal2017,lr,0.004605400879212895,0.0,0.0,0.0,0.00993227990970652

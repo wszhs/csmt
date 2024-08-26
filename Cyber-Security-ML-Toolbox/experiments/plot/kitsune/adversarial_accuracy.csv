@@ -1,0 +1,6 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc,ASR
+kitsune,mlp_torch,1.0,1.0,1.0,1.0,1.0,0.0
+kitsune,alertnet_torch,1.0,1.0,1.0,1.0,1.0,0.0
+kitsune,xgboost,1.0,1.0,1.0,1.0,1.0,0.0
+kitsune,rf,1.0,1.0,1.0,1.0,1.0,0.0
+kitsune,soft_ensemble,1.0,1.0,1.0,1.0,1.0,0.0

@@ -1,0 +1,17 @@
+26/6/2022 -- 21:31:16 - <Notice> - This is Suricata version 5.0.3 RELEASE running in USER mode
+26/6/2022 -- 21:31:16 - <Info> - CPUs/cores online: 8
+26/6/2022 -- 21:31:16 - <Info> - fast output device (regular) initialized: fast.log
+26/6/2022 -- 21:31:16 - <Info> - eve-log output device (regular) initialized: eve.json
+26/6/2022 -- 21:31:16 - <Info> - stats output device (regular) initialized: stats.log
+26/6/2022 -- 21:31:16 - <Info> - 1 rule files processed. 20191 rules successfully loaded, 0 rules failed
+26/6/2022 -- 21:31:16 - <Info> - Threshold config parsed: 0 rule(s) found
+26/6/2022 -- 21:31:17 - <Info> - 20194 signatures processed. 1141 are IP-only rules, 3927 are inspecting packet payload, 14896 inspect application layer, 103 are decoder event only
+26/6/2022 -- 21:31:22 - <Notice> - all 9 packet processing threads, 4 management threads initialized, engine started.
+26/6/2022 -- 21:31:22 - <Info> - Starting file run for Mirai_pcap.pcap
+26/6/2022 -- 21:31:22 - <Info> - No packets with invalid checksum, assuming checksum offloading is NOT used
+26/6/2022 -- 21:31:23 - <Info> - pcap file Mirai_pcap.pcap end of file reached (pcap err code 0)
+26/6/2022 -- 21:31:23 - <Notice> - Signal Received.  Stopping engine.
+26/6/2022 -- 21:31:23 - <Info> - time elapsed 1.359s
+26/6/2022 -- 21:31:24 - <Notice> - Pcap-file module read 1 files, 764137 packets, 50313120 bytes
+26/6/2022 -- 21:31:24 - <Info> - Alerts: 168
+26/6/2022 -- 21:31:24 - <Info> - cleaning up signature grouping structure... complete

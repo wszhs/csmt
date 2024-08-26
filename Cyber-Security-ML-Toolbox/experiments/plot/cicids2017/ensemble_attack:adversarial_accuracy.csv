@@ -1,0 +1,2 @@
+datasets,algorithm,accuracy,f1,precision,recall,roc_auc
+cicids2017,soft_ensemble,0.6561679790026247,0.0,0.0,0.0,0.49603174603174605

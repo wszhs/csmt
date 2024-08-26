@@ -1,0 +1,74 @@
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_setup.py:_flush():68] Configure stats pid to 40344
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_setup.py:_flush():68] Loading settings from /Users/zhanghangsheng/.config/wandb/settings
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_setup.py:_flush():68] Loading settings from /Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/wandb/settings
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_setup.py:_flush():68] Loading settings from environment variables: {'_require_service': 'True'}
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_setup.py:_flush():68] Inferring run settings from compute environment: {'program_relpath': 'tests/test_classifer.py', 'program': '/Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/tests/test_classifer.py'}
+2022-10-01 17:13:06,665 INFO    MainThread:40344 [wandb_init.py:_log_setup():476] Logging user logs to /Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/wandb/run-20221001_171306-z6yu5klo/logs/debug.log
+2022-10-01 17:13:06,666 INFO    MainThread:40344 [wandb_init.py:_log_setup():477] Logging internal logs to /Users/zhanghangsheng/Documents/my_code/Cyber-Security-ML-Toolbox/wandb/run-20221001_171306-z6yu5klo/logs/debug-internal.log
+2022-10-01 17:13:06,666 INFO    MainThread:40344 [wandb_init.py:init():516] calling init triggers
+2022-10-01 17:13:06,666 INFO    MainThread:40344 [wandb_init.py:init():520] wandb.init called with sweep_config: {}
+config: {}
+2022-10-01 17:13:06,666 INFO    MainThread:40344 [wandb_init.py:init():569] starting backend
+2022-10-01 17:13:06,666 INFO    MainThread:40344 [wandb_init.py:init():573] setting up manager
+2022-10-01 17:13:06,673 INFO    MainThread:40344 [backend.py:_multiprocessing_setup():104] multiprocessing start_methods=fork,spawn,forkserver, using: spawn
+2022-10-01 17:13:06,677 INFO    MainThread:40344 [wandb_init.py:init():580] backend started and connected
+2022-10-01 17:13:06,680 INFO    MainThread:40344 [wandb_init.py:init():658] updated telemetry
+2022-10-01 17:13:06,681 INFO    MainThread:40344 [wandb_init.py:init():693] communicating run to backend with 30 second timeout
+2022-10-01 17:13:20,261 ERROR   Thread-1  :40344 [retry.py:__call__():154] Retry attempt failed:
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 667, in urlopen
+    self._prepare_proxy(conn)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 932, in _prepare_proxy
+    conn.connect()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connection.py", line 371, in connect
+    ssl_context=context,
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/util/ssl_.py", line 386, in ssl_wrap_socket
+    return context.wrap_socket(sock, server_hostname=server_hostname)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 407, in wrap_socket
+    _context=self, _session=session)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 817, in __init__
+    self.do_handshake()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 1077, in do_handshake
+    self._sslobj.do_handshake()
+  File "/opt/anaconda3/envs/py36/lib/python3.6/ssl.py", line 689, in do_handshake
+    self._sslobj.do_handshake()
+ConnectionResetError: [Errno 54] Connection reset by peer
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/adapters.py", line 449, in send
+    timeout=timeout
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/connectionpool.py", line 727, in urlopen
+    method, url, error=e, _pool=self, _stacktrace=sys.exc_info()[2]
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/urllib3/util/retry.py", line 446, in increment
+    raise MaxRetryError(_pool, url, error or ResponseError(cause))
+urllib3.exceptions.MaxRetryError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/lib/retry.py", line 113, in __call__
+    result = self._call_fn(*args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/sdk/internal/internal_api.py", line 199, in execute
+    return self.client.execute(*args, **kwargs)  # type: ignore
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 52, in execute
+    result = self._get_result(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/client.py", line 60, in _get_result
+    return self.transport.execute(document, *args, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/wandb/vendor/gql-0.2.0/wandb_gql/transport/requests.py", line 38, in execute
+    request = requests.post(self.url, **post_args)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/api.py", line 116, in post
+    return request('post', url, data=data, json=json, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/api.py", line 60, in request
+    return session.request(method=method, url=url, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/sessions.py", line 533, in request
+    resp = self.send(prep, **send_kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/sessions.py", line 646, in send
+    r = adapter.send(request, **kwargs)
+  File "/opt/anaconda3/envs/py36/lib/python3.6/site-packages/requests/adapters.py", line 510, in send
+    raise ProxyError(e, request=request)
+requests.exceptions.ProxyError: HTTPSConnectionPool(host='api.wandb.ai', port=443): Max retries exceeded with url: /graphql (Caused by ProxyError('Cannot connect to proxy.', ConnectionResetError(54, 'Connection reset by peer')))
+2022-10-01 17:13:36,781 ERROR   MainThread:40344 [wandb_init.py:init():703] backend process timed out
+2022-10-01 17:13:36,781 ERROR   MainThread:40344 [wandb_init.py:init():712] encountered error: Error communicating with wandb process
+For more info see: https://docs.wandb.ai/library/init#init-start-error
