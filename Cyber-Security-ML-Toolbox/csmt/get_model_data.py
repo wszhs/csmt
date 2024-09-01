@@ -45,10 +45,10 @@ from sklearn import metrics
 # 'rf','xgboost','rnn_torch','lstm_torch','mlp_torch','alertnet_torch','idsnet_torch','deepnet_torch'
 def parse_arguments(arguments):
     parser = configargparse.ArgParser(config_file_parser_class=configargparse.YAMLConfigFileParser)
-    parser.add('--attack_models',required=False,default=['xgboost'],choices=['lr'])
+    parser.add('--attack_models',required=False,default=['lr'],choices=['lr'])
     parser.add('--adv_train_models',required=False,default=['lr'],choices=['lr'])
-    parser.add('--algorithms', required=False, default=['cnn_mnist_torch'],choices=['lstm_keras','ae','ft_transformer','lr', 'svm','dt','rf','xgboost','lightgbm','catboost','deepforest','knn','hmm','mlp_keras','mlp_torch','cnn_torch','kitnet','if','diff-rf','soft_ensemble','hard_ensemble','stacking_ensemble','bayes_ensemble'])
-    parser.add('--datasets',required=False, default='mnist',choices=['cora_graph','blob','anomaly','breast_cancer_zhs','iris_zhs','cicids2017','cicandmal2017','twitter_spam','bodmas','malimg'])
+    parser.add('--algorithms', required=False, default=['lr'],choices=['lstm_keras','ae','ft_transformer','lr', 'svm','dt','rf','xgboost','lightgbm','catboost','deepforest','knn','hmm','mlp_keras','mlp_torch','cnn_torch','kitnet','if','diff-rf','soft_ensemble','hard_ensemble','stacking_ensemble','bayes_ensemble'])
+    parser.add('--datasets',required=False, default='cicids2018',choices=['cora_graph','blob','anomaly','breast_cancer_zhs','iris_zhs','cicids2017','cicandmal2017','twitter_spam','bodmas','malimg'])
     parser.add('--evasion_algorithm',required=False,default=['zosgd'],choices=['universal','gan','bayes','fgsm','fgsm_l1','pgd','cw','bound','jsma','bim','deepfool','zoo','hsj','zones','zosgd','zoscd','zoadamm','zo_shap_sgd','zo_shap_scd','tree','zosgd_sum'])
     parser.add('--adv_train_algorithm',required=False,default=['zosgd'],choices=['fgsm','pgd','cw','bound','jsma'])
     options = parser.parse_args(arguments)
